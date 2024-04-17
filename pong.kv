@@ -1,0 +1,22 @@
+#:kivy 1.11.1
+
+<PongGame>:
+    canvas:
+        Rectangle:
+            ##Бордюр посеридине
+            pos: self.center_x - 5, 0
+            size: 10, delf.height
+
+    Label:
+        ## Очки игрока слева
+        font_size: 70
+        center_x: root.width / 4
+        top: root.top - 50
+        text: "0"
+
+    Label:
+        ## Очки игрока справа
+        font_size: 70
+        center_x: root.wight * 3/4
+        top: root.top -50
+        text: "0"   
